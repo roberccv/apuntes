@@ -1,0 +1,16 @@
+
+  <%-include("header", {}) %>
+  <body>
+    <h1><%= titulo %></h1>
+    <p>Welcome to <%= titulo %></p>
+    <div id="formLog" >
+      <form action="/login" method="post">
+        <label>Ususario <input type="text" name="usuario" id="usuario"></label>
+        <label>Contrasena <input type="password" name="contra" id="contra"></label>
+        <button type="submit">Iniciar sesión</button>
+      </form>
+    </div>
+    <a href="/registrarse">¿No eres miembro? Reistrate</a>   
+  </body>
+  <%- include("footer", {}) %>
+

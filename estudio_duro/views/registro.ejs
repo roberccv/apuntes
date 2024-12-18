@@ -1,0 +1,14 @@
+    <%-include("header", {}) %>
+  <body>
+    <h1>Registro para <%= titulo %></h1>
+    <div id="formLog" >
+      <form action="/registrarse" method="post">
+        <label>Ususario <input type="text" name="usuario" id="usuario"></label>
+        <label>Contrasena <input type="password" name="contra" id="contra"></label>
+        <button type="submit">Registro</button>
+      </form>
+    </div>
+    <a href="/">volver</a>
+  </body>
+    <%- include("footer", {}) %>
+
